@@ -3,10 +3,10 @@ int a = Convert.ToInt32(Console.ReadLine());
 int sum = 0;
 while (a > 0)
 {
- a = a % 10;
- sum = sum + a;
+ sum = sum + a % 10;
+ a = a / 10;
     } 
-Console.WriteLine(sum);
+Console.Write($"Сумма цифр = {sum}");
 
 /*int c = (a / 10) % 10;
 //it d = a / 100;
